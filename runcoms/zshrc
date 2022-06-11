@@ -20,5 +20,9 @@ fi
 # Customize to your needs...
 export LSCOLORS=CxfxcxdxbxGxDxabagacad
 
+# Open JDK
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
