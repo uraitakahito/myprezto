@@ -24,5 +24,8 @@ export LSCOLORS=CxfxcxdxbxGxDxabagacad
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 
+# SPHINX
+export PATH="$PATH:/opt/homebrew/opt/sphinx-doc/bin"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
