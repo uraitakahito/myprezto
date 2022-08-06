@@ -20,6 +20,9 @@ fi
 # Customize to your needs...
 export LSCOLORS=CxfxcxdxbxGxDxabagacad
 
+# Editor
+export EDITOR="vim"
+
 # rbenv
 [[ -d $HOME/.rbenv ]] && \
   export PATH=${HOME}/.rbenv/bin:${PATH} && \
