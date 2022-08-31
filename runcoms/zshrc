@@ -18,7 +18,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-export LSCOLORS=CxfxcxdxbxGxDxabagacad
+export LSCOLORS=FxfxcxdxbxGxDxabagacad
 
 # Editor
 export EDITOR="vim"
