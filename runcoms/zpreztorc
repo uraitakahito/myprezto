@@ -39,7 +39,8 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'completion' \
   'history-substring-search' \
-  'prompt'
+  'prompt' \
+  'syntax-highlighting'
 
 #
 # Autosuggestions
@@ -177,24 +178,25 @@ zstyle ':prezto:module:prompt' theme 'powerlevel10k'
 
 #
 # Syntax Highlighting
+#   https://github.com/sorin-ionescu/prezto/blob/51c4ff6de4e2d1afd30e52ba19b21b1128fd1ed5/modules/syntax-highlighting/README.md
 #
 
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
-# zstyle ':prezto:module:syntax-highlighting' highlighters \
-#   'main' \
-#   'brackets' \
-#   'pattern' \
-#   'line' \
-#   'cursor' \
-#   'root'
-#
+zstyle ':prezto:module:syntax-highlighting' highlighters \
+  'main' \
+  'brackets' \
+  'pattern' \
+  'line' \
+  'cursor' \
+  'root'
+
 # Set syntax highlighting styles.
-# zstyle ':prezto:module:syntax-highlighting' styles \
-#   'builtin' 'bg=blue' \
-#   'command' 'bg=blue' \
-#   'function' 'bg=blue'
-#
+zstyle ':prezto:module:syntax-highlighting' styles \
+  'alias' 'fg=green,bold' \
+  'globbing' 'fg=magenta,bold' \
+  'cursor' 'fg=red'
+
 # Set syntax pattern styles.
 # zstyle ':prezto:module:syntax-highlighting' pattern \
 #   'rm*-rf*' 'fg=white,bold,bg=red'
