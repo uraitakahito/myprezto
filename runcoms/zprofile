@@ -71,3 +71,12 @@ fi
 if [[ -z "$LESSOPEN" ]] && (( $#commands[(i)lesspipe(|.sh)] )); then
   export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
 fi
+
+#
+# TAB completion
+#
+#   README:
+#     https://github.com/sorin-ionescu/prezto/blob/51c4ff6de4e2d1afd30e52ba19b21b1128fd1ed5/modules/completion/README.md
+#   initial LS_COLORS:
+#     https://github.com/sorin-ionescu/prezto/blob/51c4ff6de4e2d1afd30e52ba19b21b1128fd1ed5/modules/completion/init.zsh#L47
+export LS_COLORS='di=35:ln=35:so=32:pi=33:ex=31:bd=36;01:cd=33;01:su=31;40;07:sg=36;40;07:tw=32;40;07:ow=33;40;07:'
