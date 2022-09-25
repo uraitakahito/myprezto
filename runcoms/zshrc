@@ -21,7 +21,9 @@ fi
 export LSCOLORS=FxfxcxdxbxGxDxabagacad
 
 # Editor
-export EDITOR="vim"
+if type "vim" > /dev/null 2>&1; then
+  export EDITOR="vim"
+fi
 
 # rbenv
 [[ -d $HOME/.rbenv ]] && \
