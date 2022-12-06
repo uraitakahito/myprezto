@@ -30,6 +30,11 @@ fi
   export PATH=${HOME}/.rbenv/bin:${PATH} && \
   eval "$(rbenv init -)"
 
+# nodenv
+if type "nodenv" > /dev/null 2>&1; then
+  eval "$(nodenv init -)"
+fi
+
 # Open JDK
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
