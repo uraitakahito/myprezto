@@ -23,6 +23,16 @@ fi
 #   echo 'test' | gpg --clearsign
 export GPG_TTY=$TTY
 
+# Snippet viewer with Zle Widgets
+show_snippets() {
+  local snippets=$(cat ~/.zsh_snippets | fzf | cut -d':' -f2-)
+  local trimmed_lbuffer="$(echo "${LBUFFER}" | sed 's/ *$//')"
+  LBUFFER="${trimmed_lbuffer} ${snippets}"
+  zle reset-prompt
+}
+zle -N show_snippets
+bindkey '^o' show_snippets
+
 # rbenv
 [[ -d $HOME/.rbenv ]] && \
   export PATH=${HOME}/.rbenv/bin:${PATH} && \
